@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#101b16">
+  <title>G-STUDY • Admin tổng</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1210;--side:#101a16;--panel:#14211b;--panel2:#182820;--line:#26382e;--text:#edf7ef;--muted:#9caf9f;--green:#85d36e;--green2:#3f9c56;--red:#ff8585;--amber:#f2c66d;--shadow:0 16px 40px #0005}
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,input,select,textarea{font:inherit}button{cursor:pointer}
+    .gate{min-height:100vh;display:grid;place-items:center;padding:24px}.gate-card{width:min(100%,390px);display:grid;gap:20px}.brand{font-family:Georgia,serif;color:#a8b9ac;font-size:16px}.gate-form{display:grid;gap:12px}.gate-form input{height:54px;border:1px solid #34473b;border-radius:12px;background:#111c16;color:white;padding:0 16px;outline:none}.gate-form input:focus{border-color:var(--green);box-shadow:0 0 0 3px #85d36e22}.btn{border:0;border-radius:11px;padding:11px 15px;font-weight:800;background:var(--green2);color:#fff}.btn:hover{filter:brightness(1.08)}.btn:disabled{opacity:.55;cursor:wait}.btn.secondary{background:#22352a;border:1px solid #395443;color:#dff2e3}.btn.danger{background:#502929;border:1px solid #7c4141;color:#ffdede}.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}.message{min-height:18px;color:#ffaaaa;text-align:center;font-size:13px;margin:0}
+    [hidden]{display:none!important}.app{min-height:100vh;display:grid;grid-template-columns:250px minmax(0,1fr)}.sidebar{background:var(--side);border-right:1px solid var(--line);padding:22px 16px;display:flex;flex-direction:column;gap:24px}.side-brand{font-size:21px;font-weight:950;letter-spacing:-.7px;color:var(--green)}.side-brand small{display:block;font-size:10px;letter-spacing:1.7px;color:var(--muted);font-weight:700;margin-top:3px}.nav{display:grid;gap:7px}.nav button{width:100%;display:flex;align-items:center;gap:12px;text-align:left;padding:12px 13px;border:1px solid transparent;border-radius:11px;background:transparent;color:var(--muted);font-weight:750}.nav button.active,.nav button:hover{background:#1a2b20;border-color:#2d4934;color:#edffeb}.nav .ico{width:22px;text-align:center;font-size:18px}.side-foot{margin-top:auto;color:var(--muted);font-size:12px;line-height:1.5}.side-foot strong{color:#e9f5e9}.main{min-width:0}.topbar{height:74px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;gap:16px;background:#0e1712;position:sticky;top:0;z-index:5}.topbar h1{font-size:18px;margin:0}.top-actions{display:flex;align-items:center;gap:10px}.pill{border:1px solid #3a5940;background:#17251b;color:#b8efaa;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:850}.content{padding:28px;max-width:1500px;margin:auto}.view{display:none}.view.active{display:block}.section-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}.section-head h2{font-size:23px;margin:0 0 4px}.section-head p{margin:0;color:var(--muted);font-size:13px}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:22px}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}.card span{color:var(--muted);font-size:12px}.card strong{display:block;font-size:30px;margin:8px 0 2px}.card small{font-size:11px;color:var(--muted)}.panel h3{margin:0 0 14px;font-size:16px}.toolbar{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:14px}.search{min-width:220px;max-width:380px;width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#0f1913;color:var(--text);outline:none}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:12px}.table{width:100%;border-collapse:collapse;min-width:700px}.table th,.table td{padding:12px 13px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;vertical-align:top}.table th{font-size:11px;color:#b4c5b7;text-transform:uppercase;letter-spacing:.7px;background:#19271f;position:sticky;top:0}.table tr:last-child td{border-bottom:0}.table td{color:#e2eee4}.muted{color:var(--muted)}.actions{display:flex;gap:6px;flex-wrap:wrap}.mini{padding:6px 9px;font-size:11px;border-radius:8px}.tag{display:inline-block;border-radius:999px;padding:4px 8px;background:#1d3925;color:#b8efaa;font-weight:800;font-size:10px}.tag.pending{background:#3d3320;color:#f5d58e}.empty{padding:30px;text-align:center;color:var(--muted)}.detail{margin-top:14px}.module{background:#101b15;border:1px solid var(--line);border-radius:12px;padding:15px;margin:10px 0}.module-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.module-head h4{margin:0}.item-list{display:grid;gap:8px;margin-top:12px}.item{border:1px solid #2a3b30;border-radius:9px;padding:10px 12px;display:flex;justify-content:space-between;gap:12px;align-items:start}.item p{margin:4px 0 0;color:var(--muted);font-size:12px;white-space:pre-wrap}.modal-backdrop{position:fixed;inset:0;background:#0009;display:grid;place-items:center;padding:18px;z-index:20}.modal{width:min(100%,560px);max-height:90vh;overflow:auto;background:#132019;border:1px solid #38503f;border-radius:16px;padding:20px;box-shadow:0 25px 70px #0009}.modal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}.modal-head h3{margin:0}.close{border:1px solid var(--line);background:transparent;color:var(--text);width:34px;height:34px;border-radius:9px}.field{display:grid;gap:6px;margin:11px 0}.field label{font-size:12px;color:#b6c7b9;font-weight:750}.field input,.field select,.field textarea{width:100%;background:#0e1812;color:var(--text);border:1px solid #33473a;border-radius:9px;padding:10px 11px;outline:none}.field textarea{min-height:90px;resize:vertical}.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}.notice{border:1px solid #344b39;background:#17251b;border-radius:11px;padding:12px;color:#bdd9c0;font-size:12px;line-height:1.5;margin-bottom:15px}.mobile-menu{display:none}
+    @media(max-width:950px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.app{grid-template-columns:210px minmax(0,1fr)}.content{padding:20px}}
+    @media(max-width:680px){.app{display:block}.sidebar{display:none}.topbar{height:64px;padding:0 14px}.topbar h1{font-size:15px}.content{padding:16px 12px 90px}.cards{gap:9px}.card{padding:13px}.card strong{font-size:24px}.mobile-menu{display:grid;position:fixed;bottom:0;left:0;right:0;grid-template-columns:repeat(5,1fr);gap:2px;padding:7px 4px calc(7px + env(safe-area-inset-bottom));background:#101a16f7;border-top:1px solid var(--line);z-index:10;backdrop-filter:blur(12px)}.mobile-menu button{border:0;background:transparent;color:var(--muted);font-size:10px;font-weight:750;padding:5px 1px;display:grid;gap:3px;justify-items:center}.mobile-menu button.active{color:var(--green)}.mobile-menu b{font-size:18px}.search{max-width:100%}.section-head h2{font-size:20px}}
+  </style>
+</head>
+<body>
+  <section id="gate" class="gate">
+    <div class="gate-card">
+      <div class="brand">G-STUDY • Internal portal</div>
+      <form id="loginForm" class="gate-form" autocomplete="on">
+        <input id="adminPassword" name="password" type="password" placeholder="Mật khẩu" autocomplete="current-password" required autofocus aria-label="Mật khẩu quản trị">
+        <button id="loginButton" class="btn" type="submit">Truy cập</button>
+        <p id="loginMessage" class="message" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <div id="app" class="app" hidden>
+    <aside class="sidebar">
+      <div class="side-brand">G-STUDY <small>ADMIN CONTROL CENTER</small></div>
+      <nav class="nav" id="sideNav">
+        <button class="active" data-view="overview"><span class="ico">▦</span>Tổng quan</button>
+        <button data-view="students"><span class="ico">♙</span>Học sinh</button>
+        <button data-view="lessons"><span class="ico">▤</span>Bài học & nội dung</button>
+        <button data-view="attempts"><span class="ico">▥</span>Kết quả học tập</button>
+        <button data-view="messages"><span class="ico">✉</span>Liên hệ hỗ trợ</button>
+      </nav>
+      <div class="side-foot">Khu vực quản trị riêng tư.<br><strong>Chỉ tài khoản ADMIN</strong> được truy cập dữ liệu.</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1 id="pageTitle">Tổng quan hệ thống</h1>
+        <div class="top-actions"><span class="pill">ADMIN</span><button id="refreshBtn" class="btn secondary mini">Làm mới</button><button id="logoutBtn" class="btn ghost mini">Đăng xuất</button></div>
+      </header>
+      <div class="content">
+        <section class="view active" id="view-overview">
+          <div class="section-head"><div><h2>Tổng quan G-STUDY</h2><p>Theo dõi tình hình hoạt động của toàn bộ nền tảng.</p></div></div>
+          <div id="statCards" class="cards"><div class="card"><span>Đang tải</span><strong>…</strong></div></div>
+          <div class="panel"><h3>Truy cập nhanh</h3><div class="toolbar"><button class="btn secondary" data-jump="students">Danh sách học sinh</button><button class="btn secondary" data-jump="lessons">Quản lý bài học</button><button class="btn secondary" data-jump="attempts">Kết quả học tập</button><button class="btn secondary" data-jump="messages">Tin nhắn liên hệ</button></div><div class="notice">Trang quản trị sử dụng API hiện có của G-STUDY. Tài khoản, kết quả và nội dung chỉ được tải sau khi máy chủ xác nhận phiên ADMIN.</div></div>
+        </section>
+
+        <section class="view" id="view-students">
+          <div class="section-head"><div><h2>Quản lý học sinh</h2><p>Danh sách tài khoản học sinh, số lượt học và điểm trung bình.</p></div><button class="btn secondary" id="exportStudents">Xuất CSV</button></div>
+          <div class="toolbar"><input class="search" id="studentSearch" placeholder="Tìm theo tên hoặc email..."></div>
+          <div id="studentsTable" class="panel"><div class="empty">Chưa tải dữ liệu.</div></div>
+        </section>
+
+        <section class="view" id="view-lessons">
+          <div class="section-head"><div><h2>Quản lý bài học & nội dung</h2><p>Thêm, sửa, xóa Unit, mô-đun kỹ năng và hoạt động.</p></div><button class="btn" id="addLesson">+ Thêm bài học</button></div>
+          <div id="lessonsTable" class="panel"><div class="empty">Chưa tải dữ liệu.</div></div>
+          <div id="lessonDetail" class="detail"></div>
+        </section>
+
+        <section class="view" id="view-attempts">
+          <div class="section-head"><div><h2>Kết quả học tập</h2><p>Tối đa 200 lượt học gần nhất được lưu trên hệ thống.</p></div><button class="btn secondary" id="exportAttempts">Xuất CSV</button></div>
+          <div class="toolbar"><input class="search" id="attemptSearch" placeholder="Tìm học sinh hoặc mã bài..."></div>
+          <div id="attemptsTable" class="panel"><div class="empty">Chưa tải dữ liệu.</div></div>
+        </section>
+
+        <section class="view" id="view-messages">
+          <div class="section-head"><div><h2>Liên hệ hỗ trợ</h2><p>Đọc yêu cầu hỗ trợ do học sinh gửi từ trang Cá nhân.</p></div></div>
+          <div id="messagesTable" class="panel"><div class="empty">Chưa tải dữ liệu.</div></div>
+        </section>
+      </div>
+    </main>
+    <nav class="mobile-menu" id="mobileNav">
+      <button class="active" data-view="overview"><b>▦</b>Tổng quan</button>
+      <button data-view="students"><b>♙</b>Học sinh</button>
+      <button data-view="lessons"><b>▤</b>Bài học</button>
+      <button data-view="attempts"><b>▥</b>Kết quả</button>
+      <button data-view="messages"><b>✉</b>Liên hệ</button>
+    </nav>
+  </div>
+
+  <div id="modalRoot"></div>
+  <script>
+    const $ = id => document.getElementById(id);
+    const state = {students:[],attempts:[],lessons:[],messages:[],currentLesson:null};
+    const titles = {overview:'Tổng quan hệ thống',students:'Quản lý học sinh',lessons:'Quản lý bài học & nội dung',attempts:'Kết quả học tập',messages:'Liên hệ hỗ trợ'};
+    function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+    async function api(url,options={}){
+      const res=await fetch(url,{credentials:'same-origin',...options,headers:{...(options.body?{'Content-Type':'application/json'}:{}),...(options.headers||{})}});
+      const data=await res.json().catch(()=>({}));
+      if(!res.ok) throw new Error(res.status===403?'Không có quyền ADMIN hoặc phiên đã hết hạn.':(data.error||'Không thể xử lý yêu cầu.'));
+      return data;
+    }
+    function showGate(message=''){$('app').hidden=true;$('gate').hidden=false;$('loginMessage').textContent=message;}
+    function showApp(){$('gate').hidden=true;$('app').hidden=false;}
+    function setView(name){document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id==='view-'+name));document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('active',x.dataset.view===name));$('pageTitle').textContent=titles[name]||'G-STUDY';loadView(name);}
+    function notify(msg){const root=$('modalRoot');root.innerHTML=`<div class="modal-backdrop"><div class="modal"><div class="modal-head"><h3>Thông báo</h3><button class="close" onclick="document.getElementById('modalRoot').innerHTML=''">×</button></div><p class="muted">${esc(msg)}</p><div class="modal-actions"><button class="btn" onclick="document.getElementById('modalRoot').innerHTML=''">Đóng</button></div></div></div>`;}
+    function openModal(title,fields,values,onSave){
+      const root=$('modalRoot');
+      const html=fields.map(f=>{const value=values[f.name]??f.value??'';if(f.type==='select')return `<div class="field"><label>${esc(f.label)}</label><select name="${esc(f.name)}">${f.options.map(o=>`<option value="${esc(o.value)}" ${String(value)===String(o.value)?'selected':''}>${esc(o.label)}</option>`).join('')}</select></div>`;if(f.type==='textarea')return `<div class="field"><label>${esc(f.label)}</label><textarea name="${esc(f.name)}" ${f.required?'required':''}>${esc(value)}</textarea></div>`;return `<div class="field"><label>${esc(f.label)}</label><input name="${esc(f.name)}" type="${f.type||'text'}" value="${esc(value)}" ${f.required?'required':''} ${f.min!==undefined?`min="${f.min}"`:''}></div>`}).join('');
+      root.innerHTML=`<div class="modal-backdrop" id="modalBackdrop"><form class="modal" id="editForm"><div class="modal-head"><h3>${esc(title)}</h3><button class="close" type="button" id="closeModal">×</button></div>${html}<div class="modal-actions"><button class="btn ghost" type="button" id="cancelModal">Hủy</button><button class="btn" type="submit">Lưu thay đổi</button></div></form></div>`;
+      const close=()=>root.innerHTML='';$('closeModal').onclick=close;$('cancelModal').onclick=close;
+      $('editForm').onsubmit=async e=>{e.preventDefault();const fd=new FormData(e.currentTarget);const data={};fields.forEach(f=>data[f.name]=fd.get(f.name));try{await onSave(data);close();}catch(err){notify(err.message)}};
+      $('modalBackdrop').addEventListener('click',e=>{if(e.target.id==='modalBackdrop')close()});
+    }
+    function csv(filename,rows){if(!rows?.length){notify('Không có dữ liệu để xuất.');return}const keys=Object.keys(rows[0]);const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"';const body=[keys.map(q).join(','),...rows.map(r=>keys.map(k=>q(r[k])).join(','))].join('\r\n');const blob=new Blob(['\ufeff'+body],{type:'text/csv;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=filename;a.click();URL.revokeObjectURL(a.href)}
+    async function loadStats(){const s=await api('/api/admin/stats');$('statCards').innerHTML=[['Tổng học sinh',s.students,'Tài khoản học sinh'],['Tổng lượt học',s.attempts,'Lượt học đã ghi nhận'],['Hoạt động 7 ngày',s.active_7d,'Học sinh có hoạt động'],['Điểm trung bình',Number(s.average||0).toFixed(2),'Trên toàn hệ thống']].map(x=>`<div class="card"><span>${x[0]}</span><strong>${x[1]}</strong><small>${x[2]}</small></div>`).join('')}
+    async function loadView(name){try{if(name==='overview'){await loadStats()}if(name==='students')await loadStudents();if(name==='lessons')await loadLessons();if(name==='attempts')await loadAttempts();if(name==='messages')await loadMessages()}catch(e){if(e.message.includes('phiên')||e.message.includes('quyền')){showGate('Phiên quản trị đã hết hạn. Vui lòng đăng nhập lại.');return}notify(e.message)}}
+    async function loadStudents(){const d=await api('/api/admin/students');state.students=d.students||[];renderStudents()}
+    function renderStudents(){const q=($('studentSearch').value||'').toLowerCase();const rows=state.students.filter(x=>(x.name+' '+x.email).toLowerCase().includes(q));$('studentsTable').innerHTML=rows.length?`<div class="table-wrap"><table class="table"><thead><tr><th>Học sinh</th><th>Email</th><th>Lượt học</th><th>Điểm TB</th><th>Ngày tạo</th></tr></thead><tbody>${rows.map(x=>`<tr><td>${esc(x.name)}</td><td>${esc(x.email)}</td><td>${x.attempts}</td><td>${Number(x.average||0).toFixed(2)}</td><td>${esc(x.created_at)}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">Không có học sinh phù hợp.</div>'}
+    async function loadAttempts(){const d=await api('/api/admin/attempts');state.attempts=d.attempts||[];renderAttempts()}
+    function renderAttempts(){const q=($('attemptSearch').value||'').toLowerCase();const rows=state.attempts.filter(x=>(x.name+' '+x.email+' '+x.lesson_id).toLowerCase().includes(q));$('attemptsTable').innerHTML=rows.length?`<div class="table-wrap"><table class="table"><thead><tr><th>Học sinh</th><th>Email</th><th>Mã bài</th><th>Điểm</th><th>Thời lượng</th><th>Thời gian</th></tr></thead><tbody>${rows.map(x=>`<tr><td>${esc(x.name)}</td><td>${esc(x.email)}</td><td>${esc(x.lesson_id)}</td><td>${Number(x.score).toFixed(1)}</td><td>${x.duration}s</td><td>${esc(x.created_at)}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">Chưa có lượt học.</div>'}
+    async function loadMessages(){const d=await api('/api/admin/messages');state.messages=d.messages||[];renderMessages()}
+    function renderMessages(){$('messagesTable').innerHTML=state.messages.length?`<div class="table-wrap"><table class="table"><thead><tr><th>Người gửi</th><th>Nội dung</th><th>Thời gian</th><th>Trạng thái</th><th>Thao tác</th></tr></thead><tbody>${state.messages.map(x=>`<tr><td><b>${esc(x.name)}</b><br><small class="muted">${esc(x.email)}</small></td><td style="white-space:pre-wrap;min-width:230px">${esc(x.message)}</td><td>${esc(x.created_at)}</td><td><span class="tag ${x.status==='Mới'?'pending':''}">${esc(x.status)}</span></td><td>${x.status==='Mới'?`<button class="btn secondary mini" data-read="${x.id}">Đánh dấu đã xử lý</button>`:'—'}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">Chưa có tin nhắn liên hệ.</div>';document.querySelectorAll('[data-read]').forEach(b=>b.onclick=async()=>{try{await api('/api/admin/messages/read',{method:'POST',body:JSON.stringify({id:Number(b.dataset.read)})});await loadMessages()}catch(e){notify(e.message)}})}
+    async function loadLessons(){const d=await api('/api/admin/lessons');state.lessons=d.lessons||[];$('lessonsTable').innerHTML=state.lessons.length?`<div class="table-wrap"><table class="table"><thead><tr><th>Mã</th><th>Tên bài học</th><th>Unit</th><th>Thao tác</th></tr></thead><tbody>${state.lessons.map((x,i)=>`<tr><td>${esc(x.id)}</td><td>${esc(x.title)}</td><td>${esc(x.unit)}</td><td class="actions"><button class="btn secondary mini" data-detail="${i}">Mở nội dung</button><button class="btn ghost mini" data-edit-lesson="${i}">Sửa</button><button class="btn danger mini" data-delete-lesson="${i}">Xóa</button></td></tr>`).join('')}</tbody></table></div>`:'<div class="empty">Chưa có bài học.</div>';
+      document.querySelectorAll('[data-detail]').forEach(b=>b.onclick=()=>openLesson(state.lessons[Number(b.dataset.detail)]));document.querySelectorAll('[data-edit-lesson]').forEach(b=>b.onclick=()=>editLesson(state.lessons[Number(b.dataset.editLesson)]));document.querySelectorAll('[data-delete-lesson]').forEach(b=>b.onclick=()=>deleteLesson(state.lessons[Number(b.dataset.deleteLesson)]));}
+    function lessonFields(){return[{name:'id',label:'Mã bài học (không trùng)',required:true},{name:'title',label:'Tên bài học',required:true},{name:'unit',label:'Unit',required:true},{name:'content_json',label:'Dữ liệu JSON nội dung',type:'textarea',value:'{"questions":[]}'}]}
+    function addLesson(){openModal('Thêm bài học',lessonFields(),{},async d=>{try{JSON.parse(d.content_json||'{}')}catch{throw Error('Dữ liệu JSON không hợp lệ.')}await api('/api/admin/lessons/create',{method:'POST',body:JSON.stringify(d)});await loadLessons();await loadStats()})}
+    function editLesson(x){openModal('Sửa bài học',lessonFields(),x,async d=>{try{JSON.parse(d.content_json||'{}')}catch{throw Error('Dữ liệu JSON không hợp lệ.')}await api('/api/admin/lessons/update',{method:'POST',body:JSON.stringify(d)});await loadLessons();if(state.currentLesson?.id===x.id)await openLesson({...x,...d});})}
+    async function deleteLesson(x){if(!confirm(`Xóa bài học “${x.title}” cùng các mô-đun và hoạt động bên trong?`))return;await api('/api/admin/lessons/delete',{method:'POST',body:JSON.stringify({id:x.id})});state.currentLesson=null;$('lessonDetail').innerHTML='';await loadLessons();await loadStats()}
+    async function openLesson(x){state.currentLesson=x;$('lessonDetail').innerHTML='<div class="panel"><div class="empty">Đang tải nội dung...</div></div>';try{const d=await api('/api/lesson/'+encodeURIComponent(x.id));const lesson=d.lesson||x;const modules=d.modules||[];$('lessonDetail').innerHTML=`<div class="panel"><div class="section-head"><div><h2>${esc(lesson.title)}</h2><p>${esc(lesson.unit)} · ${modules.length} mô-đun</p></div><button class="btn" id="addModule">+ Thêm mô-đun</button></div>${modules.length?modules.map((m,mi)=>`<div class="module"><div class="module-head"><div><h4>${esc(m.title)} <span class="tag">${esc(m.skill)}</span></h4><small class="muted">${m.minutes} phút · ${m.items?.length||0} hoạt động</small></div><div class="actions"><button class="btn ghost mini" data-edit-module="${mi}">Sửa mô-đun</button><button class="btn danger mini" data-del-module="${mi}">Xóa</button><button class="btn secondary mini" data-add-item="${mi}">+ Hoạt động</button></div></div><div class="item-list">${(m.items||[]).map((it,ii)=>`<div class="item"><div><b>${esc(it.item_type)}</b><p>${esc(it.prompt)}</p></div><div class="actions"><button class="btn ghost mini" data-edit-item="${mi}:${ii}">Sửa</button><button class="btn danger mini" data-del-item="${mi}:${ii}">Xóa</button></div></div>`).join('')||'<p class="muted">Chưa có hoạt động.</p>'}</div></div>`).join(''):'<div class="empty">Bài học chưa có mô-đun.</div>'}</div>`;
+      $('addModule').onclick=()=>moduleForm(x.id,null);document.querySelectorAll('[data-edit-module]').forEach(b=>b.onclick=()=>moduleForm(x.id,modules[Number(b.dataset.editModule)]));document.querySelectorAll('[data-del-module]').forEach(b=>b.onclick=async()=>{const m=modules[Number(b.dataset.delModule)];if(confirm(`Xóa mô-đun ${m.title} và hoạt động bên trong?`)){await api('/api/admin/modules/delete',{method:'POST',body:JSON.stringify({id:m.id})});await openLesson(x)}});document.querySelectorAll('[data-add-item]').forEach(b=>b.onclick=()=>itemForm(modules[Number(b.dataset.addItem)],null));document.querySelectorAll('[data-edit-item]').forEach(b=>b.onclick=()=>{const [mi,ii]=b.dataset.editItem.split(':').map(Number);itemForm(modules[mi],modules[mi].items[ii])});document.querySelectorAll('[data-del-item]').forEach(b=>b.onclick=async()=>{const [mi,ii]=b.dataset.delItem.split(':').map(Number),it=modules[mi].items[ii];if(confirm('Xóa hoạt động này?')){await api('/api/admin/items/delete',{method:'POST',body:JSON.stringify({id:it.id})});await openLesson(x)}});
+      }catch(e){$('lessonDetail').innerHTML=`<div class="panel empty">${esc(e.message)}</div>`}}
+    function moduleForm(lessonId,m){const fields=[{name:'id',label:'Mã mô-đun',required:true},{name:'title',label:'Tên mô-đun',required:true},{name:'skill',label:'Kỹ năng (vocabulary/reading/listening/speaking/writing)',required:true},{name:'minutes',label:'Thời lượng (phút)',type:'number',min:1},{name:'sort_order',label:'Thứ tự',type:'number',min:0}];const vals=m||{minutes:5,sort_order:1};openModal(m?'Sửa mô-đun':'Thêm mô-đun',fields,vals,async d=>{const payload={...d,minutes:Number(d.minutes),sort_order:Number(d.sort_order)};if(m){delete payload.id;await api('/api/admin/modules/update',{method:'POST',body:JSON.stringify({id:m.id,...payload})})}else await api('/api/admin/modules/create',{method:'POST',body:JSON.stringify({...payload,lesson_id:lessonId})});await openLesson(state.currentLesson)})}
+    function itemForm(m,it){const fields=[{name:'id',label:'Mã hoạt động',required:true},{name:'item_type',label:'Loại hoạt động',type:'select',options:[{value:'mcq',label:'Trắc nghiệm (mcq)'},{value:'short_answer',label:'Trả lời ngắn'},{value:'text',label:'Viết (text)'},{value:'audio',label:'Nghe (audio)'},{value:'recording',label:'Nói / ghi âm (recording)'}]},{name:'prompt',label:'Đề bài / câu hỏi',type:'textarea',required:true},{name:'answer',label:'Đáp án / gợi ý',type:'textarea'},{name:'options_text',label:'Các lựa chọn (mỗi lựa chọn một dòng)',type:'textarea'},{name:'media_url',label:'Đường dẫn media (nếu có)'},{name:'rubric_text',label:'Rubric JSON (nếu có)',type:'textarea'},{name:'sort_order',label:'Thứ tự',type:'number',min:0}];let vals=it?{...it,options_text:(()=>{try{return JSON.parse(it.options_json||'[]').join('\n')}catch{return ''}})(),rubric_text:it.rubric_json||'{}'}:{item_type:'mcq',options_text:'',rubric_text:'{}',sort_order:1};openModal(it?'Sửa hoạt động':'Thêm hoạt động',fields,vals,async d=>{let rubric={};try{rubric=JSON.parse(d.rubric_text||'{}')}catch{throw Error('Rubric phải là JSON hợp lệ.')}const payload={item_type:d.item_type,prompt:d.prompt,answer:d.answer,options:(d.options_text||'').split('\n').map(x=>x.trim()).filter(Boolean),media_url:d.media_url,rubric,sort_order:Number(d.sort_order)};if(it)await api('/api/admin/items/update',{method:'POST',body:JSON.stringify({id:it.id,...payload})});else await api('/api/admin/items/create',{method:'POST',body:JSON.stringify({id:d.id,module_id:m.id,...payload})});await openLesson(state.currentLesson)})}
+    async function logout(){try{await api('/api/logout',{method:'POST',body:'{}'})}catch{}showGate();$('adminPassword').value='';$('adminPassword').focus()}
+    async function authenticate(){try{const d=await api('/api/me');if(d.user?.role==='admin'){showApp();await setView('overview');return true}}catch{}showGate();return false}
+    $('loginForm').addEventListener('submit',async e=>{e.preventDefault();const p=$('adminPassword').value;if(!p)return;$('loginButton').disabled=true;$('loginMessage').textContent='';try{await api('/api/admin/login',{method:'POST',body:JSON.stringify({password:p})});$('adminPassword').value='';await authenticate()}catch(err){$('adminPassword').value='';$('loginMessage').textContent='Không thể xác thực.';$('adminPassword').focus()}finally{$('loginButton').disabled=false}});
+    document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.view)));document.querySelectorAll('[data-jump]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.jump)));
+    $('logoutBtn').onclick=logout;$('refreshBtn').onclick=()=>loadView(document.querySelector('.view.active')?.id.replace('view-','')||'overview');$('addLesson').onclick=addLesson;
+    $('studentSearch').addEventListener('input',renderStudents);$('attemptSearch').addEventListener('input',renderAttempts);$('exportStudents').onclick=()=>csv('g-study-hoc-sinh.csv',state.students);$('exportAttempts').onclick=()=>csv('g-study-ket-qua.csv',state.attempts);
+    authenticate();
+  </script>
+</body>
+</html>
